@@ -1,0 +1,57 @@
+---
+topslider: [
+  {
+    text: '<h4>WORLD MUSIC TOUR</h4><h2>MI Music: Funk Carves Out A Groove At The Funk Music Hall Of Fame In Ohio</h2>',
+    avaimg: 'img/ava.png',
+    avatext: '<h4>james burlton <br>11 june 2022</h4>'
+  },
+  {
+    text: '<h4>WORLD MUSIC TOUR</h4><h2>MI Music: Funk Carves Out A Groove At The Funk Music Hall Of Fame In Ohio</h2>',
+    avaimg: 'img/ava.png',
+    avatext: '<h4>james burlton <br>11 june 2022</h4>'
+  },
+  {
+    text: '<h4>WORLD MUSIC TOUR</h4><h2>MI Music: Funk Carves Out A Groove At The Funk Music Hall Of Fame In Ohio</h2>',
+    avaimg: 'img/ava.png',
+    avatext: '<h4>james burlton <br>11 june 2022</h4>'
+  }
+]
+
+news: [
+  {
+    text: '<h3>Pete talks about live on tour</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>',
+    img: 'img/image1.jpg'
+  },
+  {
+    text: '<h3>Pete talks about live on tour</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>',
+    img: 'img/image2.jpg'
+  },
+  {
+    text: '<h3>Pete talks about live on tour</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>',
+    img: 'img/image3.jpg'
+  },
+  {
+    text: '<h3>Pete talks about live on tour</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>',
+    img: 'img/image4.jpg'
+  }
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  {% include "partials/_header.html" %}
+  {% include "partials/_hero.html" %}
+
+  <div class="l">
+    {% include "partials/_articles.html" %}
+    <div class="testis">
+      {% include "partials/_testi.html" %}
+      {% include "partials/_testi.html" %}
+    </div>
+  </div>
+
+  {% include "partials/_news.html" %}
+
+
+{% endblock %}

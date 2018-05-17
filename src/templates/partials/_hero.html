@@ -1,0 +1,23 @@
+<!-- begin hero -->
+<div class="hero" style="background-image: url(img/hero-bg.jpg);">
+  <div class="swiper__container top-slider js-top-slider">
+    <div class="swiper-wrapper">
+      {% for slide in topslider %}
+      <div class="swiper-slide top-slider__slide">
+
+        <div class="top-slider__text">
+          {{ slide.text | safe }}
+        </div>
+
+        <div class="top-slider__person">
+          <img src="{{ slide.avaimg }}" alt="">
+          {{ slide.avatext | safe }}
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+<!-- end hero -->

@@ -1,0 +1,27 @@
+<!-- begin news -->
+<div class="news">
+  <div class="l">
+    <div class="news__title">
+      <h2>Latest news ::</h2>
+    </div>
+  </div>
+  <div class="swiper-container news-slider js-news-slider">
+    <div class="swiper-wrapper">
+
+      {% for slide in news %}
+      <div class="swiper-slide news-slider__slide">
+        <img src="{{ slide.img }}" alt="">
+
+        <!-- begin news-slider__text -->
+        <div class="news-slider__text">
+          {{ slide.text | safe }}
+        </div>
+        <!-- end news-slider__text -->
+
+        <a href="" class="btn">read more</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- end news -->

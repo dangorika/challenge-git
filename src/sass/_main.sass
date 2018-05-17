@@ -1,0 +1,246 @@
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 40px 50px
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 100
+	width: 100%
+	line-height: 1
+	&.is-fixed
+		background: rgba(0,0,0,.5)
+	&__logo
+		h1
+			+brl-b
+			font-weight: normal
+			font-size: 24px
+		a
+			text-decoration: none
+			display: block
+			color: #fff
+			span
+				display: inline-block
+				padding: 10px
+				background: $blue-bg
+	&__links
+		display: flex
+		align-items: center
+
+.nav
+	a
+		text-transform: uppercase
+		color: #fff
+		font-size: 16px
+		+brl-b
+		text-decoration: none
+		padding: 5px 25px
+		margin-left: 5px
+		position: relative
+		overflow: hidden
+		&:before
+			transform: scale3d(0, 1, 1)
+			content: ""
+			display: block
+			width: 100%
+			height: 2px
+			background: #fff
+			position: absolute
+			top: 15px
+			left: 0
+			+trans
+			transform-origin: 0 0
+		&:hover, &.is-active
+			&:before
+				transform: scale3d(1, 1, 1)
+
+
+.socials
+	a
+		text-decoration: none
+		margin-left: 30px
+		.icon
+			fill: #fff
+			font-size: 16px
+
+
+.hero
+	width: 100%
+	height: 100vh + vh(280)
+	color: #fff
+	+brl-b
+	text-transform: uppercase
+	padding-top: vh(375)
+	+cover
+
+.top-slider
+	height: 100%
+	text-align: center
+	line-height: 1.33
+	&__slide
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-direction: column
+	&__text
+		margin-bottom: vh(160)
+		max-width: 950px
+		h4
+			font-size: 18px
+			font-weight: normal
+			margin-bottom: vh(50)
+		h2
+			font-size: 60px
+			font-weight: normal
+	&__person
+		margin-bottom: vh(280)
+		h4
+			font-size: 16px
+			font-weight: normal
+		img
+			width: 96px
+			height: 96px
+			border-radius: 50%
+			margin-bottom: vh(20)
+
+
+.articles
+	&__text
+		margin-bottom: 75px
+		h3
+			+brl-sb
+			font-size: 48px
+			color: $violet-bright
+			font-weight: normal
+			margin-bottom: 40px
+
+	&__cols
+		display: flex
+	&__left
+		width: 260px
+	&__right
+		width: calc(100% - 260px)
+		padding-left: 130px
+
+.article-video
+	img
+		max-width: 100%
+		width: 100%
+		margin-bottom: 60px
+
+.article-text
+	margin-bottom: 40px
+	h3
+		font-size: 36px
+		+brl-sb
+		font-weight: normal
+		margin-bottom: 30px
+		line-height: 1.33
+		color: $violet-dim
+	h4
+		text-transform: uppercase
+		font-size: 16px
+		+brl-b
+		font-weight: normal
+		margin-bottom: 30px
+		line-height: 1.33
+		color: $violet-dim
+
+.btn
+	appearance: none
+	font-size: 14px
+	color: $violet-bright
+	text-transform: uppercase
+	padding: 4px 34px
+	position: relative
+	text-decoration: none
+	text-align: center
+	+brl-b
+	&:before
+		content: ""
+		display: block
+		width: 2px
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: $violet-bright
+
+.testis
+	display: flex
+	justify-content: space-between
+	margin-bottom: 160px
+.testi
+	&__text
+		position: relative
+		font-size: 36px
+		line-height: 1.33
+		padding: 0 45px
+		+brl-it
+		margin-bottom: 45px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 2px
+			height: 100%
+			background: $aqua
+	&__author
+		position: relative
+		padding-left: 48+30+px
+		+brl-b
+		font-size: 14px
+		color: $violet-bright
+		text-transform: uppercase
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 48px
+			height: 48px
+			border-radius: 50%
+
+.news__title
+	font-size: 60px
+	color: $violet-bright
+	position: relative
+	display: inline-block
+	margin-bottom: 90px
+	&:before
+		content: ""
+		display: block
+		width: percentage(150/380)
+		background: $aqua
+		height: 2px
+		position: absolute
+		bottom: 0
+		left: 0
+.news-slider
+	margin-bottom: 240px
+	&__slide
+		padding: 0 63px
+
+	img
+		width: 100%
+		max-width: 100%
+		margin-bottom: 60px
+	&__text
+		margin-bottom: 30px
+		h3
+			font-size: 36px
+			+brl-sb
+			font-weight: normal
+			margin-bottom: 30px
+			line-height: 1.33
+			color: $violet-dim
+		h4
+			text-transform: uppercase
+			font-size: 16px
+			+brl-b
+			font-weight: normal
+			margin-bottom: 30px
+			line-height: 1.33
+			color: $violet-dim
